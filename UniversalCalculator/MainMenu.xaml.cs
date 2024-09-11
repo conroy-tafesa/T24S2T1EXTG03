@@ -26,5 +26,15 @@ namespace Calculator
 		{
 			this.InitializeComponent();
 		}
+
+		private void currencyConverter_Click(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(CurrencyCalc));
+		}
+
+		private void exit_Click(object sender, RoutedEventArgs e)
+		{
+			Application.Current.Exit();
+		}
 	}
 }
