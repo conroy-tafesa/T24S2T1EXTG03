@@ -26,7 +26,7 @@
 			</StackPanel>
 			<StackPanel Orientation="Vertical">
 				<TextBlock x:Name="displaytextBlock" HorizontalAlignment="Left" Margin="10" Text="Universal Calculator" VerticalAlignment="Top" FontSize="60" FontWeight="Bold" Foreground="Blue" TextAlignment="Center"/>
-				<Button x:Name="mathsCalculator" Content="Maths Calculator"/>
+				<Button x:Name="mathsCalculator" Content="Maths Calculator" Click="mathsCalculator_Click"/>
 				<Button x:Name="mortgageCalculator" Content="Mortgage Calculator" Click="mortgageCalculator_Click"/>
 				<Button x:Name="currencyConverter" Content="Currency Converter" Click="currencyConverter_Click"/>
 				<Button x:Name="exit" Content="Exit" Click="exit_Click"/>
