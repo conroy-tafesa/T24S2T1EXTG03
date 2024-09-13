@@ -8,16 +8,28 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+	<Page.Resources>
+		<Style TargetType="Button">
+			<Setter Property="Padding" Value="40"/>
+			<Setter Property="Margin" Value="10" />
+			<Setter Property="Background" Value="LightGray" />
+			<Setter Property="BorderBrush" Value="Gray" />
+			<Setter Property="FontSize" Value="36" />
+			<Setter Property="MinWidth" Value="500" />
+			<Setter Property="HorizontalAlignment" Value="Center" />
+		</Style>
+	</Page.Resources>
+
 	<Grid Background="BlanchedAlmond" >
 		<StackPanel Orientation="Horizontal">
 			<StackPanel Orientation="Vertical" MinWidth="200">
 			</StackPanel>
 			<StackPanel Orientation="Vertical">
 				<TextBlock x:Name="displaytextBlock" HorizontalAlignment="Left" Margin="10" Text="Universal Calculator" VerticalAlignment="Top" FontSize="60" FontWeight="Bold" Foreground="Blue" TextAlignment="Center"/>
-				<Button x:Name="mathsCalculator" Content="Maths Calculator" Padding="40" Margin="10" Background="Gray" FontSize="36" MinWidth="500" HorizontalAlignment="Center"/>
-				<Button x:Name="mortgageCalculator" Content="Mortgage Calculator" Padding="40" Margin="10" Background="Gray" FontSize="36" MinWidth="500" HorizontalAlignment="Center" Click="mortgageCalculator_Click"/>
-				<Button x:Name="currencyConverter" Content="Currency Converter" Padding="40" Margin="10" Background="Gray" FontSize="36" MinWidth="500" HorizontalAlignment="Center"/>
-				<Button x:Name="exit" Content="Exit"  Padding="40" Margin="10" Background="Gray" FontSize="36" MinWidth="500" HorizontalAlignment="Center"/>
+				<Button x:Name="mathsCalculator" Content="Maths Calculator"/>
+				<Button x:Name="mortgageCalculator" Content="Mortgage Calculator" Click="mortgageCalculator_Click"/>
+				<Button x:Name="currencyConverter" Content="Currency Converter" Click="currencyConverter_Click"/>
+				<Button x:Name="exit" Content="Exit" Click="exit_Click"/>
 			</StackPanel>
 			<StackPanel x:Name="AbacusImage" Orientation="Vertical">
 				<Image Source="/Images/abacus.png" Margin="20"/>
