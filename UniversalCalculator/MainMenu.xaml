@@ -29,6 +29,7 @@
 				<Button x:Name="mathsCalculator" Content="Maths Calculator" Click="mathsCalculator_Click"/>
 				<Button x:Name="mortgageCalculator" Content="Mortgage Calculator" Click="mortgageCalculator_Click"/>
 				<Button x:Name="currencyConverter" Content="Currency Converter" Click="currencyConverter_Click"/>
+				<Button x:Name="tripCalculator" Content="Trip Calculator" Click="tripCalculator_Click"  />
 				<Button x:Name="exit" Content="Exit" Click="exit_Click"/>
 			</StackPanel>
 			<StackPanel x:Name="AbacusImage" Orientation="Vertical">
